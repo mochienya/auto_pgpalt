@@ -1,2 +1,13 @@
+/target
 private_key.asc
 test.txt
+
+# Devenv
+.devenv*
+devenv.local.nix
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml

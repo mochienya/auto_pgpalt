@@ -1,0 +1,7 @@
+{
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		"Cargo.toml": "Cargo.lock",
+		"devenv.nix": "devenv*, .envrc, .devenv*, .direnv"
+	}
+}

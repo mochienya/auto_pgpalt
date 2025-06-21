@@ -1,0 +1,25 @@
+[package]
+name = "auto_pgpalt"
+version = "1.0.0"
+edition = "2024"
+
+[profile.release]
+strip = true
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+# was seething because my binary was bigger than go
+
+[dependencies]
+clap = { version = "4.5.40", default-features = false, features = [
+	"derive",
+	"help",
+	"usage",
+	"error-context",
+	"std",
+] }
+copypasta-ext = "0.4.4"
+owo-colors = "4.2.1"
+pgp = { version = "0.15.0", default-features = false }
+regex = { version = "1.11.1", default-features = false }
